@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CTF Team Signup</title>
+    <style>
+                /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Main section styles */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: calc(100vh - 130px); /* Updated to adjust the page height */
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="2.png" alt="Your Logo">
+      <h1>CTF Team Signup</h1>
+      <nav>
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <br><br>
+          <li><a href="signin.html">Sign in</a></li>
+          <br><br>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Create an Account</h2>
+        <form action="signup.php" method="POST" >
+          <div class="form-group">
+
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Enter your username Here" id="username" name="username" required>
+            <br><br>
+          
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" value="m" required> Male
+            <input type="radio" name="gender" value="f" required> Female
+            <br><br>
+          
+            <label for="email">Email :</label>
+            <input type="email" placeholder="Enter your E-mail Here" id="email" name="email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter your Password Here" id="password" name="password" required>
+            <br><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" placeholder="Confrim your password Here" id="confirm-password" name="confirm-password" required>
+            <br><br>
+
+          </div>
+          <button type="submit">Create Account</button>
+          </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 CTF Team</p>
+    </footer>
+  </body>
+</html>
